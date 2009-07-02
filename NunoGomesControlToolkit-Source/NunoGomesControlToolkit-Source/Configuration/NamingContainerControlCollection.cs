@@ -53,9 +53,14 @@ namespace NunoGomes.Web.Configuration
         /// <exception cref="T:System.Web.HttpException">Thrown if the <see cref="T:System.Web.UI.ControlCollection"></see> is read-only. </exception>
         public override void RemoveAt(int index)
         {
-            m_nameDictionary.Remove(m_linkDictionary[this[index].ID]);
-            m_linkDictionary.Remove(this[index].ID);
-
+            if (this[index].ID != null)
+            {
+                if (m_linkDictionary.ContainsKey(this[index].ID))
+                {
+                    m_nameDictionary.Remove(m_linkDictionary[this[index].ID]);
+                }
+                m_linkDictionary.Remove(this[index].ID);
+            }
             base.RemoveAt(index);
         }
         #endregion Overriden Methods
