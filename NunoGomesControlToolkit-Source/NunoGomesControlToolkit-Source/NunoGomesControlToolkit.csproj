@@ -1,0 +1,94 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28D7FB49-5D1D-49DB-9B23-CA62506840C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NunoGomes.Web</RootNamespace>
+    <AssemblyName>NunoGomesControlToolkit</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\NamingConfiguration.cs" />
+    <Compile Include="Configuration\NamingSection.cs" />
+    <Compile Include="UI\MasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Page.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WebControls\Button.cs" />
+    <Compile Include="UI\WebControls\CheckBox.cs" />
+    <Compile Include="UI\WebControls\CheckBoxList.cs" />
+    <Compile Include="UI\WebControls\ContentPlaceHolder.cs" />
+    <Compile Include="UI\UserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WebControls\GridView.cs" />
+    <Compile Include="UI\WebControls\GridViewRow.cs" />
+    <Compile Include="UI\WebControls\RegularExpressionValidator.cs" />
+    <Compile Include="UI\WebControls\CustomValidator.cs" />
+    <Compile Include="UI\WebControls\Repeater.cs" />
+    <Compile Include="UI\WebControls\RepeaterItem.cs" />
+    <Compile Include="UI\WebControls\RequiredFieldValidator.cs" />
+    <Compile Include="UI\WebControls\RadioButtonList.cs" />
+    <Compile Include="UI\WebControls\RadioButton.cs" />
+    <Compile Include="UI\WebControls\PlaceHolder.cs" />
+    <Compile Include="UI\WebControls\Panel.cs" />
+    <Compile Include="UI\WebControls\Literal.cs" />
+    <Compile Include="UI\WebControls\ListBox.cs" />
+    <Compile Include="UI\WebControls\LinkButton.cs" />
+    <Compile Include="UI\WebControls\Label.cs" />
+    <Compile Include="UI\WebControls\ImageButton.cs" />
+    <Compile Include="UI\WebControls\Image.cs" />
+    <Compile Include="UI\WebControls\HyperLink.cs" />
+    <Compile Include="UI\WebControls\HiddenField.cs" />
+    <Compile Include="UI\WebControls\DropDownList.cs" />
+    <Compile Include="UI\WebControls\TextBox.cs" />
+    <Compile Include="DynamicControlBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Configuration\KeepOriginalIDsAttribute.cs" />
+    <Compile Include="Configuration\NamingContainerControlCollection.cs" />
+    <Compile Include="Configuration\NamingProvider.cs" />
+    <Compile Include="Configuration\NamingProviderCollection.cs" />
+    <Compile Include="Configuration\ShortIDsProvider.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
