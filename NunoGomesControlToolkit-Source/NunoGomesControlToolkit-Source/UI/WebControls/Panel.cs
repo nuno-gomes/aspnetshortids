@@ -12,7 +12,7 @@ using NunoGomes.Web.Configuration;
 
 namespace NunoGomes.Web.UI.WebControls
 {
-    public class Panel : global::System.Web.UI.WebControls.Panel, INamingContainer
+    public class Panel : global::System.Web.UI.WebControls.Panel
     {
         #region Naming Management
 
