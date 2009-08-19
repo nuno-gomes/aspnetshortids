@@ -45,9 +45,9 @@ namespace NunoGomes.Web.UI.WebControls
         /// <returns>
         /// The specified control, or null if the specified control does not exist.
         /// </returns>
-        protected override Control FindControl(string id, int pathOffset)
+        protected override global::System.Web.UI.Control FindControl(string id, int pathOffset)
         {
-            Control ctrl = base.FindControl(id, pathOffset);
+            global::System.Web.UI.Control ctrl = base.FindControl(id, pathOffset);
             if (ctrl == null)
             {
                 ctrl = NamingConfiguration.Provider.FindControl(this, id, pathOffset);

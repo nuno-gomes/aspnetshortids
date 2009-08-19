@@ -1,18 +1,12 @@
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
+using System.Collections.Generic;
+using System.Text;
 using NunoGomes.Web.Configuration;
+using System.Web.UI;
 
-namespace NunoGomes.Web.UI.WebControls
+namespace NunoGomes.Web.UI.HtmlControls
 {
-    public class RadioButtonList : global::System.Web.UI.WebControls.RadioButtonList
+    public class HtmlGenericControl : global::System.Web.UI.HtmlControls.HtmlGenericControl
     {
         #region Naming Management
 
