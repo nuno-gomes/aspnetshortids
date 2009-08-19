@@ -63,7 +63,7 @@ namespace NunoGomes.Web.UI
         /// </summary>
         /// <typeparam name="T">The <see cref="System.Web.UI.Control"/> type to be mapped</typeparam>
         /// <returns>A <see cref="System.Type"/> object.</returns>
-        public static Type GetMappedType<T>() where T : Control
+        public static Type GetMappedType<T>() where T : global::System.Web.UI.Control
         {
             return GetMappedType(typeof(T), null);
         }
@@ -74,7 +74,7 @@ namespace NunoGomes.Web.UI
         /// <typeparam name="T">The <see cref="System.Web.UI.Control"/> type to be mapped</typeparam>
         /// <param name="prefix">The namespace prefix.</param>
         /// <returns>A <see cref="System.Type"/> object.</returns>
-        public static Type GetMappedType<T>(string prefix) where T : Control
+        public static Type GetMappedType<T>(string prefix) where T : global::System.Web.UI.Control
         {
             return GetMappedType(typeof(T), prefix);
         }
@@ -97,7 +97,7 @@ namespace NunoGomes.Web.UI
         /// <returns>A <see cref="System.Type"/> object.</returns>
         public static Type GetMappedType(Type type, string prefix)
         {
-            if (!typeof(Control).IsAssignableFrom(type))
+            if (!typeof(global::System.Web.UI.Control).IsAssignableFrom(type))
             {
                 throw new ArgumentOutOfRangeException("type", "Must inherit from Control.");
             }
@@ -130,7 +130,7 @@ namespace NunoGomes.Web.UI
         /// </summary>
         /// <typeparam name="T">The <see cref="System.Web.UI.Control"/> type to be mapped</typeparam>
         /// <returns>A <paramref name="T"/> object.</returns>
-        public static T CreateControl<T>() where T : Control, new()
+        public static T CreateControl<T>() where T : global::System.Web.UI.Control, new()
         {
             return (T)CreateControl(typeof(T), null);
         }
@@ -141,7 +141,7 @@ namespace NunoGomes.Web.UI
         /// <typeparam name="T">The <see cref="System.Web.UI.Control"/> type to be mapped</typeparam>
         /// <param name="prefix">The namespace prefix.</param>
         /// <returns>A <paramref name="T"/> object.</returns>
-        public static T CreateControl<T>(string prefix) where T : Control, new()
+        public static T CreateControl<T>(string prefix) where T : global::System.Web.UI.Control, new()
         {
             return (T)CreateControl(typeof(T), prefix);
         }
@@ -153,7 +153,7 @@ namespace NunoGomes.Web.UI
         /// <param name="prefix">The namespace prefix.</param>
         /// <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If args is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.</param>
         /// <returns>A <paramref name="T"/> object.</returns>
-        public static T CreateControl<T>(string prefix, params object[] args) where T : Control
+        public static T CreateControl<T>(string prefix, params object[] args) where T : global::System.Web.UI.Control
         {
             return (T)CreateControl(typeof(T), prefix, args);
         }
@@ -163,7 +163,7 @@ namespace NunoGomes.Web.UI
         /// </summary>
         /// <param name="type">The <see cref="System.Web.UI.Control"/> type to be mapped</param>
         /// <returns>A <see cref="System.Web.UI.Control"/> object.</returns>
-        public static Control CreateControl(Type type)
+        public static global::System.Web.UI.Control CreateControl(Type type)
         {
             return CreateControl(type, null);
         }
@@ -174,7 +174,7 @@ namespace NunoGomes.Web.UI
         /// <param name="type">The <see cref="System.Web.UI.Control"/> type to be mapped</param>
         /// <param name="prefix">The namespace prefix.</param>
         /// <returns>A <see cref="System.Web.UI.Control"/> object.</returns>
-        public static Control CreateControl(Type type, string prefix)
+        public static global::System.Web.UI.Control CreateControl(Type type, string prefix)
         {
             return CreateControl(type, prefix, null);
         }
@@ -186,10 +186,10 @@ namespace NunoGomes.Web.UI
         /// <param name="prefix">The namespace prefix.</param>
         /// <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If args is an empty array or null, the constructor that takes no parameters (the default constructor) is invoked.</param>
         /// <returns>A <see cref="System.Web.UI.Control"/> object.</returns>
-        public static Control CreateControl(Type type, string prefix, params object[] args)
+        public static global::System.Web.UI.Control CreateControl(Type type, string prefix, params object[] args)
         {
             Type mappedType = GetMappedType(type, prefix); ;
-            return (Control)Activator.CreateInstance(mappedType, args);
+            return (global::System.Web.UI.Control)Activator.CreateInstance(mappedType, args);
         }
         #endregion Public Methods
     }
