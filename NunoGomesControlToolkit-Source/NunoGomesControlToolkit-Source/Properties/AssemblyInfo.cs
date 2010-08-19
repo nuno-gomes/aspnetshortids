@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("NunoGomesControlToolkit")]
-[assembly: AssemblyDescription("NunoGomesControlToolkit reduce your controls UniqueID length.")]
+[assembly: AssemblyTitle("NunoGomes.ControlToolkit")]
+[assembly: AssemblyDescription("NunoGomes.ControlToolkit reduce your controls UniqueID length.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Nuno Gomes")]
-[assembly: AssemblyProduct("NunoGomesControlToolkit")]
+[assembly: AssemblyProduct("NunoGomes.ControlToolkit")]
 [assembly: AssemblyCopyright("Copyright © Nuno Gomes 2008")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
