@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="WebApp.App_MasterPages._default" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Nuno Gomes ControlToolkit Sample</title>
+    <style type="text/css">
+        BODY, P, TD
+        {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+        }
+        H2, H3, H4, H5
+        {
+            color: #ff9900;
+            font-weight: bold;
+        }
+        H2
+        {
+            font-size: 13pt;
+        }
+        H3
+        {
+            font-size: 12pt;
+        }
+        H4
+        {
+            font-size: 10pt;
+            color: black;
+        }
+        .detail
+        {
+            background-color: #FBEDBB;
+            font-family: "Courier New" , Courier, mono;
+            white-space: pre;
+        }
+        CODE
+        {
+            color: #990000;
+            font-family: "Courier New" , Courier, mono;
+        }
+        .toolbar
+        {
+            font-size: 13px;
+            font-family: Verdana;
+            padding: 6px;
+            filter: progid:DXImageTransform.Microsoft.Gradient (gradientType=0,startColorStr=#ffffff,endColorStr=lightblue);
+        }
+    </style>
+</head>
+<body>
+    <html:HtmlForm ID="form1" runat="server">
+        <asp:SiteMapDataSource ID="menuMap" runat="server" ShowStartingNode="false" />
+        <asp:Menu ID="menu" runat="server" DataSourceID="menuMap" Orientation="Horizontal"
+            CssClass="toolbar">
+            <StaticMenuStyle CssClass="toolbar" />
+            <StaticMenuItemStyle CssClass="toolbar" />
+            <DynamicHoverStyle CssClass="toolbar" />
+            <DynamicMenuStyle CssClass="toolbar" />
+        </asp:Menu>
+        <div style="margin-top:10px">
+            <asp:LinkButton ID="MyLinkButton" runat="server" Text="Press me" OnClick="MyLinkButton_Click" CommandArgument="0" ToolTip="If the text change after postback means that Server-Side click was successfully triggered" ></asp:LinkButton>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </html:HtmlForm>
+</body>
+</html>
