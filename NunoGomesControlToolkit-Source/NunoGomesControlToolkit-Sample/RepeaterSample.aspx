@@ -1,25 +1,12 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="NunoGomes.Web.UI.Page" %>
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="NunoGomes.Web.UI.Page" MasterPageFile="~/App_MasterPages/default.Master" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server" ID="A">
 <script runat="server">
     void Page_Load(object sender, EventArgs args)
     {
         rptSample.DataBind();
     }
 </script>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <title>Repeater Sample</title>
-    <style type="text/css">
-        BODY, P, TD { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt }
-        H2,H3,H4,H5 { color: #ff9900; font-weight: bold; }
-        H2 { font-size: 13pt; }
-        H3 { font-size: 12pt; }
-        H4 { font-size: 10pt; color: black; }
-        .detail { BACKGROUND-COLOR: #FBEDBB; FONT-FAMILY: "Courier New", Courier, mono; WHITE-SPACE: pre; }
-        CODE { COLOR: #990000; FONT-FAMILY: "Courier New", Courier, mono; }
-    </style>
-</head>
-<body>
-    <html:HtmlForm id="form1" runat="server">
         <h2>
             Repeater Sample.</h2>
         <h3>
@@ -39,6 +26,4 @@
                 <asp:TextBox ID="txtRepeater" runat="server" Text='<%# Eval("Text") %>' />
             </ItemTemplate>
         </asp:Repeater>
-    </html:HtmlForm>
-</body>
-</html>
+</asp:Content>

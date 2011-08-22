@@ -1,27 +1,19 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "NunoGomesControlToolkit-Sample\WebApp.csproj", "{F510DB69-4CB3-4A45-8C98-A4CB0C6B046C}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
-EndProject
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External-Lib", "External-Lib", "{707A2D75-5B58-448B-BA3A-BAAEF72AE6C2}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
 	ProjectSection(SolutionItems) = preProject
 		External-Lib\NunoGomesControlToolkit.dll = External-Lib\NunoGomesControlToolkit.dll
 		External-Lib\NunoGomesControlToolkit.pdb = External-Lib\NunoGomesControlToolkit.pdb
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "NunoGomesControlToolkit-Sample\WebApp.csproj", "{F510DB69-4CB3-4A45-8C98-A4CB0C6B046C}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 2
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs05.codeplex.com/
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs05
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = NunoGomesControlToolkit-Sample\\WebApp.csproj
 		SccProjectName1 = NunoGomesControlToolkit-Sample
