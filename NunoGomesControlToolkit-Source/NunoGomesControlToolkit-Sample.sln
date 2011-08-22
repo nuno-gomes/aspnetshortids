@@ -7,17 +7,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External-Lib", "External-Li
 		External-Lib\NunoGomesControlToolkit.pdb = External-Lib\NunoGomesControlToolkit.pdb
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "NunoGomesControlToolkit-Sample\WebApp.csproj", "{F510DB69-4CB3-4A45-8C98-A4CB0C6B046C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp_NET2.0", "NunoGomesControlToolkit-Sample\WebApp_NET2.0.csproj", "{F510DB69-4CB3-4A45-8C98-A4CB0C6B046C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp_NET4.0", "NunoGomesControlToolkit-Sample_NET4.0\WebApp_NET4.0.csproj", "{F510DB69-4CB3-4A45-8C98-A4CB0D6B046C}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
+		SccNumberOfProjects = 3
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs05
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = NunoGomesControlToolkit-Sample\\WebApp.csproj
+		SccProjectUniqueName1 = NunoGomesControlToolkit-Sample\\WebApp_NET2.0.csproj
 		SccProjectName1 = NunoGomesControlToolkit-Sample
 		SccLocalPath1 = NunoGomesControlToolkit-Sample
+		SccProjectUniqueName2 = NunoGomesControlToolkit-Sample_NET4.0\\WebApp_NET4.0.csproj
+		SccProjectName2 = NunoGomesControlToolkit-Sample_NET4.0
+		SccLocalPath2 = NunoGomesControlToolkit-Sample_NET4.0
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +33,10 @@ Global
 		{F510DB69-4CB3-4A45-8C98-A4CB0C6B046C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F510DB69-4CB3-4A45-8C98-A4CB0C6B046C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F510DB69-4CB3-4A45-8C98-A4CB0C6B046C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F510DB69-4CB3-4A45-8C98-A4CB0D6B046C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F510DB69-4CB3-4A45-8C98-A4CB0D6B046C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F510DB69-4CB3-4A45-8C98-A4CB0D6B046C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F510DB69-4CB3-4A45-8C98-A4CB0D6B046C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

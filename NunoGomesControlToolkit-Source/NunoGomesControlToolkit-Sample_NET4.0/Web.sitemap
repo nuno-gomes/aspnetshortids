@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title=""  description="">
+    <siteMapNode title="Short IDs Samples">
+      <siteMapNode url="~/Default.aspx" title="Default sample"  description="" />
+      <siteMapNode url="~/RepeaterSample.aspx" title="Repeater sample"  description="" />
+    </siteMapNode>
+    <siteMapNode title="Keeping Original IDs Samples">
+      <siteMapNode url="~/Exception.aspx" title="Exception sample"  description="" />
+      <siteMapNode url="~/OriginalIDs.aspx" title="keeping original IDs sample"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
