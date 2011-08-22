@@ -57,7 +57,8 @@
             <DynamicHoverStyle CssClass="toolbar" />
             <DynamicMenuStyle CssClass="toolbar" />
         </asp:Menu>
-        <div>
+        <div style="margin-top:10px">
+            <asp:LinkButton ID="MyLinkButton" runat="server" Text="Press me" OnClick="MyLinkButton_Click" CommandArgument="0" ToolTip="If the text change after postback means that Server-Side click was successfully triggered" ></asp:LinkButton>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
