@@ -66,6 +66,7 @@
     <Compile Include="Configuration\NamingSection.cs" />
     <Compile Include="UI\Control.cs" />
     <Compile Include="UI\HtmlControls\HtmlAnchor.cs" />
+    <Compile Include="UI\HtmlControls\HtmlForm.cs" />
     <Compile Include="UI\HtmlControls\HtmlGenericControl.cs" />
     <Compile Include="UI\HtmlControls\HtmlLink.cs" />
     <Compile Include="UI\MasterPage.cs">
@@ -77,12 +78,15 @@
     <Compile Include="UI\WebControls\Button.cs" />
     <Compile Include="UI\WebControls\CheckBox.cs" />
     <Compile Include="UI\WebControls\CheckBoxList.cs" />
+    <Compile Include="UI\WebControls\Content.cs" />
     <Compile Include="UI\WebControls\ContentPlaceHolder.cs" />
     <Compile Include="UI\UserControl.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="UI\WebControls\CreateUserWizard.cs" />
     <Compile Include="UI\WebControls\GridView.cs" />
     <Compile Include="UI\WebControls\GridViewRow.cs" />
+    <Compile Include="UI\WebControls\Login.cs" />
     <Compile Include="UI\WebControls\RegularExpressionValidator.cs" />
     <Compile Include="UI\WebControls\CustomValidator.cs" />
     <Compile Include="UI\WebControls\Repeater.cs" />
